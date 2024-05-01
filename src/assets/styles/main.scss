@@ -1,0 +1,28 @@
+@use 'reset.scss' as reset;
+
+body {
+  @include reset.bodyStyles;
+}
+
+button:focus {
+  outline: none;
+}
+
+h3,
+ul,
+h1,
+h2,
+h4,
+h5,
+h6,
+span,
+p,
+b,
+strong,
+em {
+  margin-bottom: 0;
+}
+
+*::selection {
+  background-color: #3131311b;
+}
