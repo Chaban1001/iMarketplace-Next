@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/assets/styles/phone-characteristics.module.scss';
+import styles from './phone-characteristics.module.scss';
 import { FC, useRef, useState, useEffect } from 'react';
 import GoldColor from '@/project-images/colors-params/Color - Selected.svg';
 import BlackColor from '@/project-images/colors-params/Color - Default-2.svg';

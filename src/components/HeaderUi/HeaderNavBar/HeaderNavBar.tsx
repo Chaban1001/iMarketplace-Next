@@ -1,5 +1,5 @@
 'use client';
-import styles from '@/assets/styles/header.module.scss';
+import styles from '@/components/ui/Header/header.module.scss';
 import { NavigationPaths } from '@/constants/navigation-paths';
 import Link from 'next/link';
 import { FC, useState } from 'react';

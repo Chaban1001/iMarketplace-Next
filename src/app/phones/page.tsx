@@ -1,8 +1,8 @@
 'use client';
 
 import { FC, useState, useEffect } from 'react';
-import { CatalogPage } from '@/app/CatalogPage/page';
-import styles from './phones.module.scss';
+// import { CatalogPage } from '../CatalogPage/CatalogPage';
+import styles from '@/components/PhonesUI/Phones/phones.module.scss';
 import phonesProducts from '@/common/products/products.json';
 import Pagination from '@/components/ui/Pagination/Pagination';
 import { CustomSelect } from '@/components/ui/Select/Select';
@@ -10,7 +10,7 @@ import { Phone } from '../../interfaces/phone';
 import PhoneItem from '@/components/ui/CatalogItem/CatalogItem';
 import Select from 'react-select';
 
-const PhonesPage: FC = () => {
+export default function PhonesPage() {
   const [products, setProducts] = useState<Phone[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [phonePerPage, setPhonePerPage] = useState<number>(8);
@@ -80,11 +80,11 @@ const PhonesPage: FC = () => {
   return (
     <div className={styles.phones} style={{ margin: '0 auto' }}>
       <div className={styles.catalog__container}>
-        <CatalogPage
+        {/* <CatalogPage
           smallTitle='Phones'
           models={`${products.length} models`}
           mainTitle='Mobile phones'
-        />
+        /> */}
         <div className={styles.page__select}>
           <label htmlFor='sort'>
             <span id='sort' className={styles.select__title}>
@@ -147,6 +147,4 @@ const PhonesPage: FC = () => {
       </div>
     </div>
   );
-};
-
-export default PhonesPage;
+}

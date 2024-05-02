@@ -2,7 +2,7 @@
 
 import { FC, useEffect, useState } from 'react';
 import { HeaderContainer, HeaderWrapper } from './headerStyled/headerStyled';
-import styles from '@/assets/styles/header.module.scss';
+import styles from './header.module.scss';
 import Link from 'next/link';
 import { NavigationPaths } from '@/constants/navigation-paths';
 import AppleIcon from '@mui/icons-material/Apple';

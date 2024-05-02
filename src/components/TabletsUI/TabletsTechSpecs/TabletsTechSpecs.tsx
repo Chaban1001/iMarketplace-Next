@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import styles from './tabletsTechSpecs.module.scss';
+import styles from './tablets-tech-specs.module.scss';
 import { Tablet } from '@/interfaces/tablets';
 
 interface TabletsTechSpecsProps {

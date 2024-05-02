@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/assets/styles/phones-about.module.scss';
+import styles from './phones-about.module.scss';
 
 const PhonesAbout = () => {
   return (

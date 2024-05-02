@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { styled } from 'styled-components';
-import styles from '@/assets/styles/hot-prices.module.scss';
+import styles from './hot-prices.module.scss';
 import tablets from '@/common/products/tablets.json';
 import { ICatalogItemProps } from '@/interfaces/catalog';
 import { Tablet } from '@/interfaces/tablets';

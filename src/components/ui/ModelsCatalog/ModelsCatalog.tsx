@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/assets/styles/models-catalog.module.scss';
+import styles from './models-catalog.module.scss';
 import products from '@/common/products/products.json';
 import { FC } from 'react';
 import { ModelsCatalogSection } from '@/components/ui/ModelsCatalog/modelsStyled/modelsStyled';

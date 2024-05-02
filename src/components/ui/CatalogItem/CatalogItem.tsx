@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import styles from '@/assets/styles/catalog-item.module.scss';
+import styles from './catalog-item.module.scss';
 import CustomButton from '@/components/ui/CustomButton/CustomButton';
 import { ICatalogItemProps } from '@/interfaces/catalog';
 import { CardItem } from './catalogItemStyled/catalogItemStyled';
@@ -52,7 +52,7 @@ const PhoneItem: FC<ICatalogItemProps> = ({
           <Link
             onClick={toUppPage}
             className={styles.view__product}
-            href={`${PhonesPath.PHONES}${title}`}
+            href={`${PhonesPath.PHONES}/${title}`}
           >
             View Product
           </Link>

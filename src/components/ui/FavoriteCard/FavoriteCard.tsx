@@ -1,7 +1,7 @@
 'use client';
 
 import { FC, useState } from 'react';
-import styles from '@/assets/styles/favorite-card.module.scss';
+import styles from './favorite-card.module.scss';
 import { ICatalogItemProps } from '@/interfaces/catalog';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { deleteFavorites } from '@/store/slices/productSlice';

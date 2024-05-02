@@ -1,12 +1,10 @@
-'use client';
-
 import { FC, ReactNode } from 'react';
 import { useState, useEffect } from 'react';
-import styles from '@/assets/styles/loader.module.scss';
-import Layout from '@/app/page';
+import styles from './loader.module.scss';
 import { Comment } from 'react-loader-spinner';
 import MainTitle from '@/components/ui/MainTitle/MainTitle';
 import { Apple } from '@mui/icons-material';
+import Layout from '@/app/page';
 
 type TypeLoader = {
   children: ReactNode;
@@ -47,3 +45,5 @@ export const Loader: FC<TypeLoader> = () => {
   }
   return <Layout />;
 };
+
+export default Loader;

@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/assets/styles/catalog-item.module.scss';
+import styles from '@/components/ui/CatalogItem/catalog-item.module.scss';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { FC, useState } from 'react';
 import { Products } from '@/interfaces/products';

@@ -1,15 +1,26 @@
 'use client';
 
+import styled from 'styled-components';
 import { FC, useEffect } from 'react';
-import {
-  NotFoundContainer,
-  StyledErrorPage,
-} from './NotFoundPage/notFoundStyled/notFoundStyled';
 import { Apple } from '@mui/icons-material';
 import Link from 'next/link';
 import { NavigationPaths } from '@/constants/navigation-paths';
 import styles from '@/assets/styles/not-found.module.scss';
-import error from 'next/error';
+
+export const StyledErrorPage = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding-top: 150px;
+  color: #313237;
+  font-size: 32px;
+`;
+
+export const NotFoundContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 interface NotFoundProps {
   statusText: string;

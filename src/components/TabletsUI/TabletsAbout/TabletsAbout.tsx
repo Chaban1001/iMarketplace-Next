@@ -1,7 +1,7 @@
 'use client';
 
 import { FC, Fragment, useState } from 'react';
-import styles from './tabletsAbout.module.scss';
+import styles from './tablets-about.module.scss';
 import products from '@/common/products/tablets.json';
 
 const TabletsAbout: FC = () => {

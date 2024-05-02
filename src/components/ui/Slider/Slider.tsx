@@ -10,7 +10,7 @@ import 'swiper/css/scrollbar';
 import firstSlide from '@/project-images/slider/Iphone15-Banner.jpg';
 import secondSlide from '@/project-images/slider/aalp-magsafe-header-202309.png';
 import thirdSlice from '@/project-images/slider/iphones.png';
-import styles from '@/assets/styles/slider.module.scss';
+import styles from './slider.module.scss';
 import Image from 'next/image';
 
 interface Slide {

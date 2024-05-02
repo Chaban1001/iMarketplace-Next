@@ -1,7 +1,13 @@
 @use 'reset.scss' as reset;
+@import './colors.scss';
+@import './globals.scss';
+@import '../../components/ui/Slider/slider.module.scss';
 
 body {
   @include reset.bodyStyles;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 button:focus {

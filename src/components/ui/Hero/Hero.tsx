@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/assets/styles/hero.module.scss';
+import styles from './hero.module.scss';
 import { HeroSection } from './heroStyled/heroStyled';
 import { Slider } from '@/components/ui/Slider/Slider';
 import AppleIcon from '@mui/icons-material/Apple';

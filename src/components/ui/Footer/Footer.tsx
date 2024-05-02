@@ -1,7 +1,7 @@
 'use client';
 
 import { FC, Fragment } from 'react';
-import styles from '@/assets/styles/footer.module.scss';
+import styles from './footer.module.scss';
 import AppleIcon from '@mui/icons-material/Apple';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';

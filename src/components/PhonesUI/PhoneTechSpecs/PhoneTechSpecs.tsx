@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import styles from '@/assets/styles/phone-tech-specs.module.scss';
+import styles from './phone-tech-specs.module.scss';
 import { Products } from '@/interfaces/products';
 
 interface PhonesTechSpecsProps {

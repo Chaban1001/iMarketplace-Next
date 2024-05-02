@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import '@/assets/styles/select.scss';
+import './select.scss';
 import Select, { OnChangeValue } from 'react-select';
 import { useState } from 'react';
 import { IOption } from '@/interfaces/select';

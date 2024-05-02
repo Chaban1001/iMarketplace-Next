@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import styles from '@/assets/styles/pagination.module.scss';
+import styles from './pagination.module.scss';
 import { PaginationProps } from '@/interfaces/pagination';
 
 type PaginationPageNumbers = Array<number>;

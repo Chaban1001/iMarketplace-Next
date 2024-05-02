@@ -1,5 +1,5 @@
-@import './colors.scss';
-@import './globals.scss';
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
 
 .logo__title {
   display: flex;
@@ -104,9 +104,9 @@
   }
 }
 
-@media  screen and (max-width: 400px) {
-    .burger__logo {
-      position: relative;
-      bottom: 2px;
-    }
+@media screen and (max-width: 400px) {
+  .burger__logo {
+    position: relative;
+    bottom: 2px;
+  }
 }

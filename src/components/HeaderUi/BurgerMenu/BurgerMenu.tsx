@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, FC } from 'react';
-import styles from '@/assets/styles/burger.module.scss';
+import styles from './burger.module.scss';
 import AppleIcon from '@mui/icons-material/Apple';
 import CloseIcon from '@mui/icons-material/Close';
 import Link from 'next/link';

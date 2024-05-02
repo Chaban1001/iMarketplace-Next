@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { FC } from 'react';
-import styles from '@/assets/styles/shop-category.module.scss';
+import styles from '@/components/ui/ShopCategory/shop-category.module.scss';
 import { ICategoryItemProps } from '@/interfaces/category';
 import Image from 'next/image';
 import Link from 'next/link';

@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import styled from 'styled-components';
-import styles from '@/assets/styles/shop-category.module.scss';
+import styles from './shop-category.module.scss';
 import AccessoriesBanner from '@/project-images/slider/aalp-magsafe-header-202309.png';
 import IphoneBanner from '@/project-images/slider/Iphone15-Banner.jpg';
 import TabletBanner from '@/project-images/slider/Ipad-Pro.jpg';

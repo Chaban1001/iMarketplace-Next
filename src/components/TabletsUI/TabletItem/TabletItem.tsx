@@ -6,7 +6,7 @@ import { Tablet } from '@/interfaces/tablets';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { addToFavoritesTablets } from '@/store/slices/productSlice';
 import Image from 'next/image';
-import styles from '@/assets/styles/catalog-item.module.scss';
+import styles from '@/components/ui/CatalogItem/catalog-item.module.scss';
 import Link from 'next/link';
 import CatalogButton from '@/components/ui/CatalogButton/CatalogButton';
 import TabletFavoriteButton from '@/components/TabletsUI/TabletFavoriteButton/TabletFavoriteButton';

@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/assets/styles/catalog-item.module.scss';
+import styles from '@/components/ui/CatalogItem/catalog-item.module.scss';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { Tablet, Tablets } from '@/interfaces/tablets';
 import { FC, useState } from 'react';
@@ -43,6 +43,5 @@ const TabletFavoriteButton: FC<FavoriteProps> = ({
     </button>
   );
 };
-
 
 export default TabletFavoriteButton;

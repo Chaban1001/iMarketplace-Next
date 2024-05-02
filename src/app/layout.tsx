@@ -1,6 +1,7 @@
-import type { Metadata } from 'next';
+import { FC, PropsWithChildren } from 'react';
 import { Poppins } from 'next/font/google';
 import '@/assets/styles/main.scss';
+import { Metadata } from 'next';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -14,14 +15,12 @@ export const metadata: Metadata = {
   icons: '/favicon.svg',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const RootLayout: FC = ({ children }: PropsWithChildren) => {
   return (
     <html lang='en'>
       <body className={`${poppins.className} body`}>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;

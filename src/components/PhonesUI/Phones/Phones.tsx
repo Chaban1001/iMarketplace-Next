@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import styles from '@/assets/styles/phones.module.scss';
+import styles from './phones.module.scss';
 import { PhonesProps } from '@/interfaces/phones';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar } from 'swiper/modules';
