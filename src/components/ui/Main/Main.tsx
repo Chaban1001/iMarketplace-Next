@@ -3,6 +3,8 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import Hero from '@/components/ui/Hero/Hero';
+import ModelsCatalog from '@/components/ui/ModelsCatalog/ModelsCatalog';
+import HotPrices from '@/components/ui/HotPrices/HotPrices';
 
 const MainContainer = styled.div`
   width: 100%;
@@ -12,9 +14,9 @@ export const Main: FC = () => {
   return (
     <MainContainer>
       <Hero />
-      {/* <ModelsCatalog modelsTitle='Brand New Models' /> */}
+      <ModelsCatalog modelsTitle='Brand New Models' />
       {/* <ShopCategory title='Shop by category' /> */}
-      {/* <HotPrices pricesTitle='Hot prices' /> */}
+      <HotPrices pricesTitle='Hot prices' />
     </MainContainer>
   );
 };

@@ -1,7 +1,6 @@
 'use client';
 
 import { AppContainer } from '@/appStyled/appStyled';
-import Footer from '@/components/ui/Footer/Footer';
 import Header from '@/components/ui/Header/Header';
 import { store } from '@/store/store';
 import { FC } from 'react';
@@ -12,7 +11,6 @@ const Layout: FC = () => {
     <Provider store={store}>
       <AppContainer>
         <Header />
-        <Footer />
       </AppContainer>
     </Provider>
   );
