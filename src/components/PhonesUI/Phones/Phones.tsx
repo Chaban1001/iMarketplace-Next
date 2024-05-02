@@ -8,7 +8,7 @@ import { Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import PhoneItem from '../CatalogItem/CatalogItem';
+import PhoneItem from '@/components/ui/CatalogItem/CatalogItem';
 
 const Phones: FC<PhonesProps> = ({ products }) => {
   return (

@@ -4,9 +4,10 @@ import { NavigationPaths } from '@/constants/navigation-paths';
 import Link from 'next/link';
 import { FC, useState } from 'react';
 import styled from 'styled-components';
-import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { useAppSelector } from '@/hooks/useAppSelector';
+import Heart from '@/project-images/header/favorite.svg';
+import Basket from '@/project-images/header/shopping_cart.svg';
+import Image from 'next/image';
 
 const HeaderNavItems = styled.div`
 padding: 0,
@@ -41,7 +42,7 @@ const HeaderNavBar: FC = () => {
             activeButton === NavigationPaths.FAVORITES ? styles.active : ''
           }`}
         >
-          <FavoriteBorder />
+          <Image src={Heart} alt='Heart Icon' />
           <span className={styles.heart__counter}>{favoriteCounter}</span>
         </button>
       </Link>
@@ -54,7 +55,7 @@ const HeaderNavBar: FC = () => {
             activeButton === NavigationPaths.CART ? styles.active : ''
           }`}
         >
-          <ShoppingBasketIcon />
+          <Image src={Basket} alt='Basket Icon' />
           <span className={styles.basket__counter}>{basketCounter}</span>
         </button>
       </Link>

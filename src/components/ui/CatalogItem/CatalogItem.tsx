@@ -43,7 +43,7 @@ const PhoneItem: FC<ICatalogItemProps> = ({
   return (
     <CardItem className={styles.cardItem}>
       <div className={styles.card__container}>
-        <Image src={imgUrl} alt='iphone' className={styles.image__hovered} />
+        <Image src={imgUrl} alt='iphone' className={styles.image__hovered} width={400} height={250} />
         <h3 className={styles.card__title}>{title.replaceAll('-', ' ')}</h3>
         <CustomButton
           style={{ border: '2px solid #6d6474', marginBottom: 10 }}

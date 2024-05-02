@@ -6,8 +6,8 @@ import styles from '@/assets/styles/header.module.scss';
 import Link from 'next/link';
 import { NavigationPaths } from '@/constants/navigation-paths';
 import AppleIcon from '@mui/icons-material/Apple';
-import HeaderNavBar from '@/components/ui/HeaderNavBar/HeaderNavBar';
-import BurgerMenu from '@/components/ui/BurgerMenu/BurgerMenu';
+import HeaderNavBar from '@/components/HeaderUi/HeaderNavBar/HeaderNavBar';
+import BurgerMenu from '@/components/HeaderUi/BurgerMenu/BurgerMenu';
 
 type isMenuOpen = boolean;
 type isScrolled = boolean;

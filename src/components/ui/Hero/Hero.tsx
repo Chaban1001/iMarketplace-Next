@@ -13,7 +13,7 @@ const Hero = () => {
         {
           <MainTitle className={styles.mainHero__title}>
             Welcome to iMarketplace! It&apos;s great to have you here.
-            <AppleIcon />
+            <AppleIcon style={{ fontSize: 50, marginTop: 5 }} />
           </MainTitle>
         }
         <div className={styles.swiper__div}>

@@ -1,17 +1,15 @@
+'use client';
+
 import styles from '@/assets/styles/home.module.scss';
-import Hero from '@/components/ui/Hero/Hero';
 import { Metadata } from 'next';
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
-export const metadata: Metadata = {
-  title: 'iMarketplace | Home',
-};
+interface Home {
+  children: ReactNode;
+}
 
-const Home: FC = () => {
-  return (
-    <div className={styles.home__page}>
-    </div>
-  );
+const Home: FC<Home> = ({ children }): JSX.Element => {
+  return <div className={styles.home__page}>{children}</div>;
 };
 
 export default Home;

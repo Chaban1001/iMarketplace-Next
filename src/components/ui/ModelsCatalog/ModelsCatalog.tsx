@@ -5,7 +5,7 @@ import products from '@/common/products/products.json';
 import { FC } from 'react';
 import { ModelsCatalogSection } from '@/components/ui/ModelsCatalog/modelsStyled/modelsStyled';
 import { Phone } from '@/interfaces/phones';
-import Phones from '@/components/ui/Phones/Phones';
+import Phones from '@/components/PhonesUI/Phones/Phones';
 
 interface IModelsCatalog {
   modelsTitle: string;

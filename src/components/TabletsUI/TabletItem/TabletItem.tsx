@@ -55,6 +55,8 @@ const TabletItem: FC<Tablet> = ({
           src={images === undefined ? '' : images[0]}
           alt='tablet'
           className={styles.image__hovered}
+          width={400}
+          height={250}
         />
         <h3 className={styles.card__title}>{name}</h3>
         <CustomButton
