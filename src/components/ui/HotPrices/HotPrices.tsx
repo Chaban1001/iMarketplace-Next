@@ -6,7 +6,7 @@ import styles from '@/assets/styles/hot-prices.module.scss';
 import tablets from '@/common/products/tablets.json';
 import { ICatalogItemProps } from '@/interfaces/catalog';
 import { Tablet } from '@/interfaces/tablets';
-import Tablets from '@/components/ui/Tablets/Tablets';
+import Tablets from '@/components/TabletsUI/Tablets/Tablets';
 
 const ModelsCatalogSection = styled.section`
   width: 100%;

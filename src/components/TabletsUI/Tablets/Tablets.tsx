@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Tablet } from '@/interfaces/tablets';
 import { Scrollbar } from 'swiper/modules';
-import TabletItem from '@/components/ui/TabletItem/TabletItem';
+import TabletItem from '@/components/TabletsUI/TabletItem/TabletItem';
 
 SwiperCore.use([Scrollbar]);
 

@@ -9,7 +9,7 @@ import Image from 'next/image';
 import styles from '@/assets/styles/catalog-item.module.scss';
 import Link from 'next/link';
 import CatalogButton from '@/components/ui/CatalogButton/CatalogButton';
-import TabletFavoriteButton from '@/components/ui/TabletFavoriteButton/TabletFavoriteButton';
+import TabletFavoriteButton from '@/components/TabletsUI/TabletFavoriteButton/TabletFavoriteButton';
 import CustomButton from '@/components/ui/CustomButton/CustomButton';
 
 const CardItem = styled.div`
