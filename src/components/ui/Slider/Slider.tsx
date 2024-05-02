@@ -1,3 +1,5 @@
+'use client';
+
 import { FC } from 'react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
