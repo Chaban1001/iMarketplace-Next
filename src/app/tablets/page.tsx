@@ -3,7 +3,7 @@
 import { FC, useEffect, useState } from 'react';
 import CatalogPage from '@/app/catalog/page';
 import { CustomSelect } from '@/components/ui/Select/Select';
-import styles from './tablets.module.scss';
+import styles from '@/components/TabletsUI/Tablets/tablets.module.scss';
 import { Tablet } from '@/interfaces/tablets';
 import tabletProducts from '@/common/products/tablets.json';
 import Pagination from '@mui/material/Pagination';

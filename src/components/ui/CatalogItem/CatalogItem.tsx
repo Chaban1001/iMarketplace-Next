@@ -9,7 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import CatalogButton from '@/components/ui/CatalogButton/CatalogButton';
 import FavoriteButton from '@/components/ui/FavoriteButton/FavoriteButton';
-import { useAppDispatch } from '@/hooks/useAppDispatch';
+import useAppDispatch from '@/hooks/useAppDispatch';
 import { Products } from '@/interfaces/products';
 import { addToFavorites } from '@/store/slices/productSlice';
 
@@ -43,7 +43,13 @@ const PhoneItem: FC<ICatalogItemProps> = ({
   return (
     <CardItem className={styles.cardItem}>
       <div className={styles.card__container}>
-        <Image src={imgUrl} alt='iphone' className={styles.image__hovered} width={400} height={250} />
+        <Image
+          src={imgUrl}
+          alt='iphone'
+          className={styles.image__hovered}
+          width={250}
+          height={150}
+        />
         <h3 className={styles.card__title}>{title.replaceAll('-', ' ')}</h3>
         <CustomButton
           style={{ border: '2px solid #6d6474', marginBottom: 10 }}

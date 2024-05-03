@@ -1,7 +1,7 @@
 'use client';
 
-import styles from '@/assets/styles/favorite-card.module.scss';
-import { useAppDispatch } from '@/hooks/useAppDispatch';
+import styles from './favorite-card.module.scss';
+import useAppDispatch from '@/hooks/useAppDispatch';
 import { Tablet } from '@/interfaces/tablets';
 import { deleteFavoriteTablets } from '@/store/slices/productSlice';
 import Image from 'next/image';

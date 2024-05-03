@@ -3,6 +3,7 @@
 import { FC } from 'react';
 import styles from './pagination.module.scss';
 import { PaginationProps } from '@/interfaces/pagination';
+import Link from 'next/link';
 
 type PaginationPageNumbers = Array<number>;
 
@@ -25,13 +26,13 @@ const Pagination: FC<PaginationProps> = ({
           className={`page-item ${number === currentPage ? 'active-page' : ''}`}
           key={number}
         >
-          <a
+          <Link
             href={`#?page${number}`}
             className={`${styles.page__link} active-page`}
             onClick={() => paginate(number)}
           >
             {number}
-          </a>
+          </Link>
         </li>
       ))}
     </div>

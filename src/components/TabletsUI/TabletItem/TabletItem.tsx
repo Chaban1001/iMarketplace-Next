@@ -3,7 +3,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import { Tablet } from '@/interfaces/tablets';
-import { useAppDispatch } from '@/hooks/useAppDispatch';
+import useAppDispatch from '@/hooks/useAppDispatch';
 import { addToFavoritesTablets } from '@/store/slices/productSlice';
 import Image from 'next/image';
 import styles from '@/components/ui/CatalogItem/catalog-item.module.scss';

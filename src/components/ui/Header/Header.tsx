@@ -49,12 +49,12 @@ const Header: FC = () => {
         }`}
       >
         <div onClick={toPageBottomScrolled} className={styles.header__logo}>
-          <a href='#!' className={styles.logo__link}>
+          <Link href='#!' className={styles.logo__link}>
             <AppleIcon
               className={styles.apple__logo}
               style={{ fontSize: 30, color: '#89939A' }}
             />
-          </a>
+          </Link>
           <h3 className={styles.logo__title}>iMarketplace</h3>
         </div>
         <nav className={styles.navigation__bar}>

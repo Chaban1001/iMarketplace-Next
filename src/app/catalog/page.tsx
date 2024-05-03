@@ -34,14 +34,13 @@ const CatalogPage: FC<CatalogPageProps> = ({
     <>
       <PhonesContainer className='Phones'>
         <div className='phones__navigation'>
-          <Link href={NavigationPaths.HOME}>
-            <a
-              style={{ color: '#313237' }}
-              className='phones__toHome'
-              onClick={goBack}
-            >
-              <Image src={homeIcon} alt='home icon' width={24} height={24} />
-            </a>
+          <Link
+            href={NavigationPaths.HOME}
+            style={{ color: '#313237' }}
+            className='phones__toHome'
+            onClick={goBack}
+          >
+            <Image src={homeIcon} alt='home icon' width={24} height={24} />
           </Link>
           <Image
             src={arrowRightIcon}

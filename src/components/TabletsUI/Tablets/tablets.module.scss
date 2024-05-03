@@ -1,5 +1,5 @@
-@import './colors.scss';
-@import './globals.scss';
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/globals.scss';
 
 .phones__navigation {
   display: flex;
@@ -53,7 +53,7 @@
   padding: 10px;
   border-radius: 5px;
   appearance: none;
-  background: url(../../project-images/icons/down.svg) no-repeat;
+  background: url(../../../project-images/icons/down.svg) no-repeat;
   background-position: right;
 }
 
@@ -117,6 +117,54 @@
 }
 
 .page__select {
+  padding: 0px;
+  padding-bottom: 40px;
+  padding-left: 24px;
+  max-width: 400px;
+}
+
+.catalog__containerPhones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 100px;
+}
+
+.pagination__item {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.swiper__wrapper {
+  gap: 2rem;
+}
+
+.catalog__container {
+  max-width: 1138px;
+  margin: 0 auto;
+}
+
+.catalog__containerTablets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 100px;
+  margin-bottom: 50px;
+}
+
+.select__title {
+  display: block;
+  color: $primary;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.page__select {
   width: 100%;
   padding: 0px;
   gap: 5rem;
@@ -131,65 +179,33 @@
   width: 300px;
 }
 
-.catalog__containerPhones {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  width: 100%;
-}
-
-.select__title {
-  color: $primary;
-  font-weight: 600;
-  padding-bottom: 20px;
-}
-
-.pagination__item {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 20px;
-  padding-bottom: 30px;
-}
-
-.swiper__wrapper {
-  gap: 4.5rem;
-  width: 100%;
-}
-
-.catalog__container {
-  max-width: 1138px;
-  margin: 0 auto;
-}
-
-.tablet__layout {
-  margin: 0 30px;
-}
-
-.select__title {
-  display: block;
-}
-
-@media (max-width: 900px) {
+@media screen and (width <= 1000px) {
+  .catalog__containerTablets {
+    margin: 0 50px;
+  }
+  .pagination__block {
+    padding-top: 20px;
+  }
+  .btn__pagination {
+    padding: 2.5px;
+    font-size: $primary-first-size;
+  }
+  .pagination__item {
+    margin: 0 20px;
+  }
   .page__select {
     flex-direction: column;
-    width: 100%;
     gap: 1.5em;
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 400px) {
-  .catalog__containerPhones {
-    margin: 0;
   }
 }
 
 @media screen and (width <= 390px) {
-  .pagination__item {
+  .btn__pagination {
     margin-top: 20px;
     font-size: 12px;
     padding: 5px;
+  }
+  .pagination__block {
+    display: none;
   }
 }

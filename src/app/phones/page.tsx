@@ -1,7 +1,7 @@
 'use client';
 
 import { FC, useState, useEffect } from 'react';
-// import { CatalogPage } from '../CatalogPage/CatalogPage';
+import CatalogPage from '@/app/catalog/page';
 import styles from '@/components/PhonesUI/Phones/phones.module.scss';
 import phonesProducts from '@/common/products/products.json';
 import Pagination from '@/components/ui/Pagination/Pagination';
@@ -80,11 +80,11 @@ export default function PhonesPage() {
   return (
     <div className={styles.phones} style={{ margin: '0 auto' }}>
       <div className={styles.catalog__container}>
-        {/* <CatalogPage
+        <CatalogPage
           smallTitle='Phones'
           models={`${products.length} models`}
           mainTitle='Mobile phones'
-        /> */}
+        />
         <div className={styles.page__select}>
           <label htmlFor='sort'>
             <span id='sort' className={styles.select__title}>

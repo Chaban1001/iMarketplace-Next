@@ -26,7 +26,11 @@ const Tablets: FC<{ products: Tablet[] }> = ({ products }) => {
         }}
         scrollbar={{ hide: true }}
         slidesPerView={4}
-        style={{ width: '1100px', margin: '0 auto', cursor: 'grab' }}
+        style={{
+          width: '1100px',
+          margin: '0 auto',
+          cursor: 'grab',
+        }}
       >
         {products.map((product) => (
           <SwiperSlide

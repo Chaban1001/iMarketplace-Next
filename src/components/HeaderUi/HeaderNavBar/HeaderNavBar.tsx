@@ -4,7 +4,7 @@ import { NavigationPaths } from '@/constants/navigation-paths';
 import Link from 'next/link';
 import { FC, useState } from 'react';
 import styled from 'styled-components';
-import { useAppSelector } from '@/hooks/useAppSelector';
+import useAppSelector from '@/hooks/useAppSelector';
 import Heart from '@/project-images/header/favorite.svg';
 import Basket from '@/project-images/header/shopping_cart.svg';
 import Image from 'next/image';

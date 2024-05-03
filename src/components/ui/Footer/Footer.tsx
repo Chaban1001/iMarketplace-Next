@@ -41,7 +41,7 @@ const Footer: FC = () => {
           <>
             <ul className={styles.footer__menu}>
               <li className={styles.list__item}>
-                <a
+                <Link
                   href='https://github.com/Chaban29'
                   target='_blank'
                   rel='noreferrer'
@@ -49,20 +49,20 @@ const Footer: FC = () => {
                 >
                   <GitHubIcon />
                   Github
-                </a>
+                </Link>
               </li>
               <li className={styles.list__item}>
-                <a
+                <Link
                   href='https://t.me/romanchaban'
                   target='_blank'
                   className={styles.list__link}
                 >
                   <TelegramIcon />
                   Telegram
-                </a>
+                </Link>
               </li>
               <li className={styles.list__item}>
-                <a
+                <Link
                   href='https://www.linkedin.com/in/romanchaban1001/'
                   target='_blank'
                   rel='noreferrer'
@@ -70,7 +70,7 @@ const Footer: FC = () => {
                 >
                   <LinkedInIcon />
                   LinkedIn
-                </a>
+                </Link>
               </li>
             </ul>
           </>

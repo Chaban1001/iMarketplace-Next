@@ -7,6 +7,7 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0px 1.5px 0px 0px #e2e6e9;
+  margin-top: 100px;
 `;
 
 export const HeaderContainer = styled.div`

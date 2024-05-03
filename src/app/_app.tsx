@@ -1,9 +1,15 @@
-import { FC } from 'react';
-import { AppProps } from 'next/app';
+'use client';
 
-const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
+import { AppProps } from 'next/app';
+import RootLayout from '@/app/layout';
+import Layout from '@/app/page';
+
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
+    <RootLayout>
       <Component {...pageProps} />
+      <Layout />
+    </RootLayout>
   );
 };
 

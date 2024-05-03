@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import productSlice from '../slices/productSlice';
+import store from '@/store/store';
 
-export const rootReducer = combineReducers({
+const rootReducer = combineReducers({
   productSlice: productSlice,
 });
 
-export type RootState = ReturnType<typeof rootReducer>;
+export default rootReducer;
+export type RootState = ReturnType<typeof store.getState>;
